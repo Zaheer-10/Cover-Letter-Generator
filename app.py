@@ -92,7 +92,9 @@ if submitted:
     ]
     )
     # st.write(completion)
-    response_out = completion['choices'][0]['message']['content']
+    # response_out = completion['choices'][0]['message']['content']
+    response_out = completion['choices'][0]['message']['content'] if 'choices' in completion and completion['choices'] else "No response from the API"
+
     st.write(response_out)
 
     # include an option to download a txt file

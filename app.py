@@ -61,7 +61,8 @@ if submitted:
     model = "gpt-3.5-turbo",
     temperature=ai_temp,
     messages = [
-        {"role": "user", "content" : f"You will need to generate a cover letter based on specific resume and a job description"},
+        {"role": "user", "content" : f"Generate a specific cover letter based on the above. Generate the response and include appropriate spacing between the paragraph text. Use {user_name} as the candidate"},
+        # {"role": "user", "content" : f"You will need to generate a cover letter based on specific resume and a job description"},
         {"role": "user", "content" : f"My resume text: {res_text}"},
         {"role": "user", "content" : f"The job description is: {job_desc}"},
         {"role": "user", "content" : f"The candidate's name to include on the cover letter: {user_name}"},

@@ -56,7 +56,7 @@ if submitted:
     # according to https://platform.openai.com/docs/models/gpt-3-5
     # Our most capable and cost effective model in the GPT-3.5 family is gpt-3.5-turbo which has been optimized for chat 
     # but works well for traditional completions tasks as well.
-    completion = ai.ChatCompletion.create(
+    completion = ai.Completion.create(
     #model="gpt-3.5-turbo-16k", 
     model = "gpt-3.5-turbo",
     temperature=ai_temp,
